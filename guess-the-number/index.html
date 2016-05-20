@@ -36,6 +36,7 @@
 			$scope.verifyGuess = function() {
 				$scope.deviation = $scope.original - $scope.guess;
 				$scope.noOfTries = $scope.noOfTries + 1;
+				externalFunction1($scope);
 			}
 
 			$scope.initializeGame = function () {
@@ -46,6 +47,10 @@
 			}
 
 			$scope.initializeGame();
+		}
+
+		function externalFunction1(scope) {
+			console.log("externalFunction", scope.original, scope.deviation);
 		}
 
 
