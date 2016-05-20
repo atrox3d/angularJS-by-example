@@ -1,5 +1,5 @@
-angular.module('7minWorkout').controller('WorkoutController', ['$scope', '$interval'],
-	function($scope){
+angular.module('7minWorkout').controller('WorkoutController', ['$scope', '$interval',
+	function($scope, $interval){
 		function Exercise(args) {
 			this.name = args.name;
 			this.title = args.title;
@@ -41,7 +41,7 @@ angular.module('7minWorkout').controller('WorkoutController', ['$scope', '$inter
 
 				$scope.currentExercise = exercisePlan;
 				$scope.currentExerciseDuration = 0;
-				$Interval(function () {
+				$interval(function () {
 					++$scope.currentExerciseDuration;
 				}
 				, 1000
@@ -50,7 +50,7 @@ angular.module('7minWorkout').controller('WorkoutController', ['$scope', '$inter
 		};
 
 		var createWorkout = function () {
-			var workout = new workoutPlan({
+			var workout = new WorkoutPlan({
 				name: "7minWorkout",
 				title: "7 minute workout",
 				restBetweenExercises: 10
@@ -226,9 +226,9 @@ angular.module('7minWorkout').controller('WorkoutController', ['$scope', '$inter
 			return workout;
 		};
 
-		vari init = function () {
+		var init = function () {
 			startWorkout();
 		};
 
 		init();
-});
+}]);
