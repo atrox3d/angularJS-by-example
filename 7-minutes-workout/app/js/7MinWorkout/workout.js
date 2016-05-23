@@ -1,4 +1,5 @@
-angular.module('7minWorkout').controller('WorkoutController', ['$scope', '$interval',
+angular.module('7minWorkout').controller('WorkoutController',
+	['$scope', '$interval', '$location', 
 	function($scope, $interval){
 		//
 		// Exercise constructor
@@ -81,7 +82,8 @@ angular.module('7minWorkout').controller('WorkoutController', ['$scope', '$inter
 				if(next) {
 					startExercise(next);
 				} else {
-					console.log("worlout complete");
+					// console.log("worlout complete");
+					$location.path('/finish');
 				}
 			});
 		};
