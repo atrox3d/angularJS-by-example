@@ -170,7 +170,7 @@ angular.module('7minWorkout').controller('WorkoutController', ['$scope', '$inter
                     name: "stepUpOntoChair",
                     title: "Step Up Onto Chair",
                     description: "Step exercises are ideal for building muscle in your lower body.",
-                    image: "img/stepUpOntoChair.png",
+                    image: "img/stepUpOntoChair.jpeg",
                     videos: ["//www.youtube.com/embed/aajhW7DD1EA"],
                     procedure: "Position your chair in front of you.\
                                 Stand with your feet about hip width apart, arms at your sides.\
@@ -199,7 +199,7 @@ angular.module('7minWorkout').controller('WorkoutController', ['$scope', '$inter
                     name: "tricepdips",
                     title: "Tricep Dips On Chair",
                     description: "A body weight exercise that targets triceps.",
-                    image: "img/tricepdips.png",
+                    image: "img/tricepdips.jpg",
                     videos: ["//www.youtube.com/embed/tKjcgfu44sI", "//www.youtube.com/embed/jox1rb5krQI"],
                     procedure: "Sit up on a chair. Your legs should be slightly extended, with your feet flat on the floor.\
                                 Place your hands edges of the chair. Your palms should be down, fingertips pointing towards the floor.\
