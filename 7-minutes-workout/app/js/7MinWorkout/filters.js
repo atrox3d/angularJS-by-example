@@ -13,4 +13,22 @@ angular.module('7minWorkout').filter('secondsToTime', function () {
 				+ ':' + ("0" + minutes).substr(-2)
 				+ ':' + ("0" + seconds).substr(-2) ;
 	}
-});
+})
+.filter('myLineBreakFilter', function() {
+	return function(input) {
+		var lines = input.split('.');
+		console.log(lines);
+
+		var aOutput = [];
+
+		angular.forEach(lines, function(line) {
+			aOutput.push('<li>' + line + '</li>');
+		});
+
+		var output = aOutput.join('');
+		output = '<ul>' + output + '</ul>';
+		console.log(output);
+		return output;
+	}
+})
+;
