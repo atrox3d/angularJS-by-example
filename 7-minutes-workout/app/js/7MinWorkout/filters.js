@@ -17,7 +17,6 @@ angular.module('7minWorkout').filter('secondsToTime', function () {
 .filter('myLineBreakFilter', function() {
 	return function(input) {
 		var lines = input.split('.');
-		console.log(lines);
 
 		var aOutput = [];
 
@@ -27,7 +26,6 @@ angular.module('7minWorkout').filter('secondsToTime', function () {
 
 		var output = aOutput.join('');
 		output = '<ul>' + output + '</ul>';
-		console.log(output);
 		return output;
 	}
 })

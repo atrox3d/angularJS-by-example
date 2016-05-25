@@ -1,4 +1,3 @@
-
 'use strict';
 
 /* Controllers */
@@ -335,3 +334,4 @@ angular.module('7minWorkout')
 
       init();
   }]);
+  
