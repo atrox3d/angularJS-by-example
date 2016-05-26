@@ -1,4 +1,5 @@
-var app = angular.module('app', ['ngRoute', 'ngSanitize',  '7minWorkout', 'mediaPlayer']);
+var app = angular.module('app',
+	['ngRoute', 'ngSanitize',  '7minWorkout', 'mediaPlayer', 'ui.bootstrap']);
 angular.module('7minWorkout', []);
 
 app.config(function ($routeProvider, $sceDelegateProvider){
