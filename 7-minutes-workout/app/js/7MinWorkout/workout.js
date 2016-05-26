@@ -34,6 +34,15 @@ angular.module('7minWorkout')
       var exerciseIntervalPromise;
 
 
+      $scope.onKeyPressed = function (event) {
+          switch (event.which) {
+              case 80:
+              case 112:
+                $scope.pauseResumeToggle();
+                  break;
+          }
+      };
+
       var startWorkout = function () {
           $scope.workoutPlan = createWorkout();
           $scope.workoutTimeRemaining = $scope.workoutPlan.totalWorkoutDuration();
